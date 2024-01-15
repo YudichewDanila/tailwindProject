@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="w-full text-[10px] sm_h:text-[8px] minsm:text-[5px]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-[#cccccc] h-[100vh]">
+  <div  class="w-full  h-[calc(var(--vh,1vh)*99)] flex flex-col justify-betwee fixed">
+    <div id="bg" class=" -z-10 bg-no-repeat bg-cover  fixed  w-full h-full bg-[url('./img/bg2.png')]"></div>
+        <header class="bg-white">
+            <div class="w-64 my-2 ">
+                <img src="data:image/png;base64,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"
+            </div>
+        </header>
+        <main class="flex flex-col relative justify-between h-4/5  bg-[url('./img/bg1.png')] bg-cover">
+            <div class="bg-gradient-to-t from-black from-50% via-[rgba(0,0,0,.5)] via-65% ">
+                <div class="w-full flex items-center justify-center sm_h:hidden minsm:hidden">
+                    <div class="w-full max-w-[40rem] sm:w-1/2 md:w-1/2 lg:w-2/4 xl:w-1/4 2xl:w-1/4">
+                        <img  src="data:image/png;base64,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" />
+                    </div>
+                </div>
+                <div class="w-full flex  items-center justify-center md_h:hidden sm_h:hidden minsm:hidden">
+                    <div class="w-full max-h-[19rem] max-w-[35rem] sm:w-1/2 md:w-1/2 lg:w-2/4 xl:w-1/4 2xl:w-1/4 flex justify-center">
+                        <img class="w-full h-full"  src="./img/main.png" />
+                    </div> 
+                </div>
+                <div class="w-full flex  items-center justify-center lg_h:hidden md_h:hidden sm_h:hidden minsm:hidden">
+                    <div class="w-full max-h-[15rem] max-w-[40rem] sm:w-1/2 md:w-1/2 lg:w-2/4 xl:w-1/4 2xl:w-1/4 flex justify-center bg-black">
+                        <img class="w-full h-full"  src="./img/slider.png" />
+                    </div> 
+                </div>
+            </div>
+               
+                <div class="flex flex-col justify-around h-4/5 bg-black">
+                   
+                    <div class="w-full flex items-center justify-center ">
+                    <div class="w-full max-w-[40rem]   sm:w-2/3 md:w-2/4 lg:w-2/4 xl:w-1/4 2xl:w-1/4 flex justify-center bg-black">
+                        <a class="w-full mt-5 p-4  bg-[#f22424] text-white text-center text-5xl xl_h:p-8 xl_h:text-6xl 2xl_h:p-10 2xl_h:text-8xl">Заказать</a>
+                    </div>
+                    </div>
+                    <div class="w-full flex items-center justify-center">
+                        <div class="w-full max-w-[40rem]   sm:w-2/3 md:w-2/4 lg:w-2/4 xl:w-1/4 2xl:w-1/4 flex flex-col text-center bg-black text-white">
+                            <p class=" text-[1.5rem]  minsm:text-[1rem]  2xl_h:text-[2rem]">1 день бесплатно, далее 15 руб. в день</p>
+                            <p class="text-[0.8rem]  minsm:text-[0.7rem]  2xl_h:text-[1.3rem]">Оплата будет произведена с основного счета МТС +7XXXXXXXXXX<br> Услуга оказывается МТС совместно с партнером АО "ИД Бурда"</p>
+                        </div>
+                    </div>
+                </div>
+              
+          
+               
+        </main>
+        <footer class="w-full flex items-center justify-center mt-auto bg-[#cccccc]">
+            <div class="w-full max-w-[40rem]   sm:w-2/3 md:w-2/4 lg:w-2/4 xl:w-1/4 2xl:w-1/4 flex flex-col text-center">
+                <p class="text-[0.9rem] md_h:text-[0.7rem] sm_h:text-[0.7rem] xl_h:text-[1.2rem] 2xl_h:text-[1.3rem]">Стоимость:1 день бесплатно, далее 15 руб. с НДС в день с основного счета МТС. Нажатием кнопки "Заказать" вы осуществляете заказ контентной услуги "Киоск на http://kiosk-mobile.ru" (идентификатор услуги xxx.xxxxx.xxxxxx), подтверждаете ознакомление и согласие с условиями его предоставления, Порядком предоставления контентных услуг ПАО "МТС", <a>Правилами предоставления контента</a> в рамках подписки на контент. Оказывается МТС с привлечением АО "ИД Бурда"</p>
+            </div>
+        </footer>
+  </div>
+  <script>
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    // We listen to the resize event
+    window.addEventListener('resize', () => {
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+</script>
+</body>
+</html>
